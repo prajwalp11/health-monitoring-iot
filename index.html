@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IOT health Monitoring porfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>i
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: rgb(215, 223, 231);
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(113, 90, 240);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 502;
+        font-size:20px;
+      }
+
+      nav ul li a:hover {
+        color: rgb(220, 166, 215);
+        /* font-size: 1.01rem; */
+      }
+
+      main hr {
+        border: 0;
+        background: blueviolet;
+        height: 1.5px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 1.75rem;
+      }
+       .left:hover{
+        color: rgb(220, 166, 215);
+       }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0px 50px;
+      }
+
+      .firstSection > div {
+        width: 30%;
+      }
+
+      .leftSection {
+        margin: 70px 0;
+        font-size: 3rem;
+      }
+
+      .leftSection .btn {
+        padding: 15px;
+        background: rgb(171, 171, 223);
+        /* color: lightsteelblue; */
+        border-radius: 6px;
+        font-size: 20px;
+      }
+      .leftSection .btn:hover{
+        background: rgb(121, 121, 226);
+      }
+      .rightSection img {
+        width: 100%;
+      }
+
+      .purple {
+        color: blueviolet;
+      }
+
+      .text-gray {
+        color: aqua;
+      }
+      #element {
+        color: dodgerblue;
+      }
+      .secondSection {
+        max-width: 80ww;
+        margin: auto;
+        height: 80vh;
+      }
+
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+
+      .secondSection .box {
+        background: rgb(44, 65, 142);
+        width: 77vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: aquamarine;
+        margin: 0 120px;
+      }
+
+      .image-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        font-size: 14px;
+        width: 150px;
+      }
+
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+      }
+
+      footer {
+        background-color:blueviolet;
+        height: 170px;
+      }
+      .footer {
+        display: flex;
+        padding: 2rem 123px;
+        justify-content:space-evenly;
+      }
+      .footer ul {
+        list-style-type: none;
+      }
+
+      .footer > div {
+        width: 233px;
+      }
+      footer .footer-rights {
+        text-align: center;
+        color: aquamarine;
+        padding: 12px 0;
+      }
+
+
+      photo-card {
+            width: 30px;
+            margin: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .photo-card:hover {
+            transform: scale(1.05);
+        }
+
+        .photo-card img {
+            width: 600px;
+    border: 1px solid #f00;
+    height: 300px;
+    position: relative;
+     border: 1px solid blue;
+     
+
+        }
+
+        .photo-card p {
+            padding: 15px;
+            text-align: justify;
+            font-size: 14px;
+            color: #555;
+        }
+         section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .snapchat{
+          
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 50%;
+
+        }
+        .kiolmao {
+          text-align: center;
+        }
+        /* .kiolmao:hover{
+  color:blue;
+} */
+ .kiolmao11:hover{
+  color:blue;
+}
+        /*  p */
+        .weberid {
+          text-align: center;
+        }   /* h1,h2,etc */
+
+        #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">IoT PROJECT</div>
+        <div class="right">
+          <ul>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#circuit">Circuit diagram</a></li>
+            <li><a href="#result">Result</a></li>
+            <li><a href="#codes">Codes and references</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Iot based Health monitoring sensor using<span class="purple">Arduino Uno</span>
+          <div>and LM35 sensor</div>
+          <div></div>
+          <span id="element"></span>
+
+          <h3>Document Link</h3>
+          <div class="buttons">
+            <button class="btn" src="IOT_Final (1).pdf">
+              <a style="background-color: #d3d3e2;text-decoration: none;color:rgb(32, 78, 93);font-weight: 500;" href="IOT_Final (1).pdf" target="_blank">Download Project Report</a>
+            </button>
+            <!-- <p class="lets">Make sure to download that file</p> -->
+          </div>
+        </div>
+         <div class="rightSection">
+          <img height="500px" width="900px" style="border-radius:25%;" src="ae2.jpeg" alt="IOT developer" />
+        </div>
+      </section>
+      <hr/>
+
+      <div>
+        <p id="team" class="kiolmao" style="line-height: 2rem;">Project Guide : DR. Jason Elroy Martis<br>
+        Associate Professor <br>
+      Dept of ISE NMAMIT</p>
+        <p class="kiolmao" style="line-height:3rem;">
+           This project is done by Prajwal P, Nived Ajith and Pratham N under the guidance of DR. Jason Elroy Martis <br>
+           The aim of our project is to measure heart rate <br>
+           and monitor our body temperature primarily used for medical purposes <br>
+           apart from personal use <br>
+        </p>
+      </div>
+  <hr>
+       <div>
+        <h2 class="weberid">Components Used</h2>
+        <br>
+        <div class="snapchat">
+          <!-- <img class="snapchat" src="Comp1.png"
+          alt="A SNAPCHAT APP">
+          <img class="snapchat" src="Comp2.png"
+          alt="A SNAPCHAT APPS"> -->
+
+          <p class="kiolmao" style="line-height: 2.5rem;">
+            The hardware needed for this project are: <br>
+
+                   Arduino Uno R3 board, </li><br>
+
+                  - LM35 Temperature sensor <br>
+                  
+                  - Esp 8266-01 Wifi transreceiver <br>
+                  
+                  - Pulse rate sensor <br>
+
+                  -A PCB board <br>
+
+                  -Wires <br>
+
+
+          </p>
+        </div>
+       </div>
+          <hr>
+       <div id="circuit">
+        <h2  class="weberid"> Circuit Diagram</h2>
+        <br>
+        <div class="snapchat">
+          <img style="border-radius:15%; margin-top:7px; margin-bottom : 7px; " class="snapchat" src="fritz.jpg" alt="A SNAPCHAT APP">
+
+          <p class="kiolmao">
+               
+          </p>
+           <hr style="margin-top:5rem;">
+        </div>
+         
+       </div>
+
+
+
+
+
+
+
+ </div >
+           <div id="result" id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div style="display: flex;justify-content: center; margin-top:5rem;">
+            <h1 style="margin: auto;">Result Snapshots</h1>
+            </div>
+  <div class="carousel-inner" style="width:35%;margin: 3rem 25rem;border-radius: 5%;">
+    <div class="carousel-item active">
+      <img height="300px" width="300px" src="ae.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img height="300px" width="300px" src="ae2.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img height="300px" width="300px" src="ae3.jpeg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button style="margin-left: 16rem; margin-top: 2rem;" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button style="margin-right: 17rem;margin-top: 2rem;"class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+          </div>
+
+
+
+
+<hr>
+       <div id="codes">
+        <h2 style="margin:2rem;" class="weberid">Codes</h2>
+        <div class="snapchat">
+          <!-- <img src="snap.webp" alt="A SNAPCHAT APP"> -->
+            <p class="kiolmao">
+             The codes have been added to a github repository and has been made globally accessible.  <br>
+              The libraries for ESP8266-01 and pulse sensor must be installed manually to implement them seamlessly.<br>
+            </p>
+            <br>
+            <br>
+          <p class="kiolmao"> 
+             <a href="https://github.com/12345prath/iot-codes.git"  style="text-underline-offset:0.5rem; color:rgb(145, 145, 237);">Click here for the code</a>
+
+            </p>
+        </div>
+       </div>
+             <hr>
+       <div class="kiolmao">
+            <h2 style="margin-bottom:2rem;" class="weberid" >References</h2>
+                    <p style="line-height:1.5rem;">1.Youtube- Electronic Clinic. <a style="color: rgb(145, 145, 237);" href=" https://www.electroniclinic.com/iot-based-patientmonitoring-system-using-esp8266-arduino-androidbluetooth-app/">Click here to watch</a>  <br></p>
+                    <p style="line-height:1.5rem;"> 2.Circuit digest health monitoring project <br></p>
+                    <a href="https://www.electroniclinic.com/iot-based-patient-monitoring-system-using-esp8266-arduino-android-bluetooth-app/ "  style="line-height:1.5rem;margin-bottom:2rem; text-decoration:none;color: rgb(217, 217, 236);">3.Electronic Clinic Blog - <span style="color:rgb(145, 145, 237);text-decoration: underline;">Click here</span><br></>
+          </div>
+<div class="kiolmao">
+  <div>
+        <h2 class="weberid" style="margin:5rem 0 0 0;">Working</h2>
+        <br>
+        <div style="width:78%; display: flex;justify-content: center; margin-left:8.5rem;margin-bottom: 2rem;">
+  <div class="kiolmao" style="width:78%; display: flex;justify-content: center; line-height: 2rem;">
+           
+In the health monitoring system, Arduino Uno gathers real-time data from a pulse sensor and LM35 temperature sensor. The ESP8266-01 module facilitates cloud connectivity through Blynk. The pulse sensor captures heart rate, while the LM35 monitors body temperature. These readings are transmitted to the Blynk cloud platform, enabling remote health tracking. The system provides a comprehensive overview of vital signs, ensuring efficient health monitoring. Arduino Uno acts as the central controller, interfacing seamlessly with the sensors and ESP8266-01 for continuous, reliable data transmission to the cloud.
+           </div></div>
+      <!--
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="mpkdev.jpeg"
+              alt="MPK office facebook"
+            />
+            <div class="vertical-title">HTML develpoer</div>
+
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Doloribus sed voluptas maxime, quis eveniet fuga aperiam amet eum?
+              Nulla itaque illum ullam mollitia! Voluptate sed mollitia
+              laboriosam ex magnam vitae.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="snap.webp" alt="MPK office facebook" />
+            <div class="vertical-title">HTML develpoer (2018-2023)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Doloribus sed voluptas maxime, quis eveniet fuga aperiam amet eum?
+              Nulla itaque illum ullam mollitia! Voluptate sed mollitia
+              laboriosam ex magnam vitae.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="twitter.webp"
+              alt="MPK office facebook"
+            />
+            <div class="vertical-title">HTML develpoer (2018-2023)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Doloribus sed voluptas maxime, quis eveniet fuga aperiam amet eum?
+              Nulla itaque illum ullam mollitia! Voluptate sed mollitia
+              laboriosam ex magnam vitae.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="facebook.webp"
+              alt="MPK office facebook"
+            />
+            <div class="vertical-title">HTML develpoer (2018-2023)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Doloribus sed voluptas maxime, quis eveniet fuga aperiam amet eum?
+              Nulla itaque illum ullam mollitia! Voluptate sed mollitia
+              laboriosam ex magnam vitae.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="facebook.webp"
+              alt="MPK office facebook"
+            />
+            <div class="vertical-title">HTML develpoer (2018-2023)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Doloribus sed voluptas maxime, quis eveniet fuga aperiam amet eum?
+              Nulla itaque illum ullam mollitia! Voluptate sed mollitia
+              laboriosam ex magnam vitae.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="snap.webp" alt="MPK office facebook" />
+            <div class="vertical-title">HTML develpoer (2018-2023)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Doloribus sed voluptas maxime, quis eveniet fuga aperiam amet eum?
+              Nulla itaque illum ullam mollitia! Voluptate sed mollitia
+              laboriosam ex magnam vitae.
+            </div>
+          </div>
+          <div class="vertical">Node js Developer 2012-2014</div>
+          <div class="vertical"></div>
+          <div class="vertical"></div> -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        
+        <!-- <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>Home</li>
+          </ul> -->
+        </div>
+        <!-- <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>Home</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>Home</li>
+          </ul>
+        </div> -->
+        <div>
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
+      </div>
+      <div class="footer-rights" style="color: #fff;">
+        COPYRIGHT ©     IOT HEALTH MONITORING WEBSITE     |    ALL RIGHTS RESERVED
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["<i>Components:</i> ", "PULSE Sensor ESP 8266-01 Wires and PCB board "],
+        typeSpeed: 25,
+      });
+
+      // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    </script>
+  </body>
+</html>
